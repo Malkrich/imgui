@@ -10,10 +10,16 @@ project "imgui"
     {
         "*.h",
         "*.cpp",
+
+        -- GLFW / OpenGL implementation
         "backends/imgui_impl_glfw.h",
         "backends/imgui_impl_glfw.cpp",
         "backends/imgui_impl_opengl3.h",
-        "backends/imgui_impl_opengl3.cpp"
+        "backends/imgui_impl_opengl3.cpp",
+
+        -- Guizmo extension
+        "ImGuizmo/**.h",
+        "ImGuizmo/**.cpp"
     }
 
     includedirs
